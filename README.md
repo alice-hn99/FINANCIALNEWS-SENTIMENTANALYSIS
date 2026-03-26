@@ -1,5 +1,6 @@
 # FINANCIALNEWS-SENTIMENTANALYSIS
 Our mission is to help  investors make smarter, faster decisions by using AI-driven sentiment analysis to turn financial news into clear,  actionable insights.
+
 📊 Project Overview
 This project investigates the effectiveness of various Natural Language Processing (NLP) models in forecasting stock price movements based on financial news headlines. The primary goal was to determine whether a general-purpose financial sentiment model (FinBERT) can reliably predict price changes across different industries or if sector-specific fine-tuning is required for better accuracy.
 
