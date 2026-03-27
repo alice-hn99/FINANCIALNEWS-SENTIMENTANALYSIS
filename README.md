@@ -20,10 +20,13 @@ Modeling: Fed the combined sentiment and historical price data into an LSTM netw
 
 🔬 Key Findings
 
-1. Model Selection (Phase 1)Among the tested architectures, FinBERT-LSTM emerged as the most robust model, significantly outperforming TextBlob and general BERT in both classification and regression tasks.
+1. Model Selection (Phase 1)
+  
+Among the tested architectures, FinBERT-LSTM emerged as the most robust model, significantly outperforming TextBlob and general BERT in both classification and regression tasks.
 
-2. Cross-Sector Generalization (Phase 2)The study found that the general FinBERT model delivered high predictive accuracy across Technology, Real Estate, Healthcare, Energy, and Finance.
+4. Cross-Sector Generalization (Phase 2)
+The study found that the general FinBERT model delivered high predictive accuracy across Technology, Real Estate, Healthcare, Energy, and Finance.
    
-Macro Trends: These sectors are heavily influenced by broad economic indicators already encoded in FinBERT.
+   Macro Trends: These sectors are heavily influenced by broad economic indicators already encoded in FinBERT.
 
-The Entertainment Exception: This was the only sector where a fine-tuned model outperformed the general version, due to the industry's unique use of nuanced and media-specific language.
+   The Entertainment Exception: This was the only sector where a fine-tuned model outperformed the general version, due to the industry's unique use of nuanced and media-specific language.
