@@ -24,7 +24,7 @@ Modeling: Fed the combined sentiment and historical price data into an LSTM netw
   
 Among the tested architectures, FinBERT-LSTM emerged as the most robust model, significantly outperforming TextBlob and general BERT in both classification and regression tasks.
 
-4. Cross-Sector Generalization (Phase 2)
+2. Cross-Sector Generalization (Phase 2)
 The study found that the general FinBERT model delivered high predictive accuracy across Technology, Real Estate, Healthcare, Energy, and Finance.
    
    Macro Trends: These sectors are heavily influenced by broad economic indicators already encoded in FinBERT.
