@@ -5,28 +5,22 @@ Our mission is to help  investors make smarter, faster decisions by using AI-dri
 
 This study investigates the effectiveness of various sentiment analysis models in forecasting stock price movements based on financial news headlines. Market sentiment plays a critical role in financial decisions, but the increasing volume and speed of information have made traditional manual review impractical. This project evaluates whether sector-level customization improves prediction accuracy enough to justify the extra cost and complexity compared to general models.
 
-🛠️ Tech StackLanguage: 
+🛠️ Methodology
 
-PythonSentiment Models: TextBlob (Lexicon-based), BERT (General Transformer), FinBERT (Domain-specific Transformer).
-Time-Series Forecasting: Long Short-Term Memory (LSTM) Networks.
-Data Source: Bloomberg Terminal news headlines and NASDAQ historical trading data (2018).
+The study followed a two-phase research framework:
 
-📈 Data PipelinePreprocessing: 
+Phase 1: General Model Development: Tested various sentiment analysis models—TextBlob, BERT, and FinBERT—to determine which most accurately interprets financial news sentiment.
 
-Cleaned a subset of 696,948 financial records from 2018.Sentiment 
-Scoring: Generated daily average sentiment scores per ticker using TextBlob, BERT, and FinBERT.
-Feature Engineering: Calculated daily stock price changes ($Price\_Change = \frac{Close - Open}{Open}$) and merged them with sentiment features.
-Modeling: Fed the combined sentiment and historical price data into an LSTM network to capture temporal market patterns.
+Phase 2: Industry-Specific Development: Fine-tuned the best-performing model (FinBERT) for six target industries: Technology, Energy, Healthcare, Real Estate, Finance, and Entertainment.Modeling Approach: Integrated sentiment scores with historical stock price data using Long Short-Term Memory (LSTM) networks to capture temporal market patterns.
 
-🔬 Key Findings
+🖼️ Visualizations & Results1. 
 
-1. Model Selection (Phase 1)
-  
-Among the tested architectures, FinBERT-LSTM emerged as the most robust model, significantly outperforming TextBlob and general BERT in both classification and regression tasks.
+Model Comparison (Phase 1)
+[IMAGE_NOTE: Insert Figure 11 - Classification Metrics Comparison showing FinBERT outperforming others]
 
-2. Cross-Sector Generalization (Phase 2)
-The study found that the general FinBERT model delivered high predictive accuracy across Technology, Real Estate, Healthcare, Energy, and Finance.
-   
-Macro Trends: These sectors are heavily influenced by broad economic indicators already encoded in FinBERT.
+FinBERT emerged as the most robust model, outperforming alternatives in accuracy, precision, recall, and F1 score. It achieved a test accuracy of 70.44% and a test F1 score of 0.71.
 
-The Entertainment Exception: This was the only sector where a fine-tuned model outperformed the general version, due to the industry's unique use of nuanced and media-specific language.
+Sector-Specific Performance
+[IMAGE_NOTE: Insert Figure 13 (Tech), Figure 14 (Real Estate), or Figure 16 (Energy) to show Actual vs. Predicted Price Change]
+
+The general FinBERT model outperformed industry-specific versions in five out of six sectors due to the strong influence of macroeconomic trends. Entertainment was the only sector where a fine-tuned model performed better, likely due to the unique cultural language and subjective tone of media news.
