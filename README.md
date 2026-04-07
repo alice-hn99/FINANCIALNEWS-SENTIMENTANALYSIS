@@ -22,6 +22,7 @@ Model Comparison (Phase 1)
 <img width="1600" height="764" alt="image" src="https://github.com/user-attachments/assets/b30f5b8b-b9c7-4e00-8ad8-2bab93c03233" />                               
 FinBERT emerged as the most robust model, outperforming alternatives in accuracy, precision, recall, and F1 score. It achieved a test accuracy of 70.44% and a test F1 score of 0.71.
 
+
 Sector-Specific Performance
 
 The general FinBERT model outperformed industry-specific versions in five out of six sectors due to the strong influence of macroeconomic trends. 
