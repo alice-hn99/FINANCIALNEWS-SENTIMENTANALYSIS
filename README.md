@@ -20,11 +20,9 @@ Modeling Approach: Integrated sentiment scores with historical stock price data 
 Model Comparison (Phase 1)
 
 <img width="1600" height="764" alt="image" src="https://github.com/user-attachments/assets/b30f5b8b-b9c7-4e00-8ad8-2bab93c03233" />
-Classification Metrics Comparison
+                                          Classification Metrics Comparison
 
-FinBERT emerged as the most robust model, outperforming alternatives in accuracy, precision, recall, and F1 score. 
-
-It achieved a test accuracy of 70.44% and a test F1 score of 0.71.
+FinBERT emerged as the most robust model, outperforming alternatives in accuracy, precision, recall, and F1 score. It achieved a test accuracy of 70.44% and a test F1 score of 0.71.
 
 Sector-Specific Performance
 
@@ -33,15 +31,15 @@ The general FinBERT model outperformed industry-specific versions in five out of
 Entertainment was the only sector where a fine-tuned model performed better, likely due to the unique cultural language and subjective tone of media news.
 
 <img width="1606" height="764" alt="image" src="https://github.com/user-attachments/assets/b07cb8c3-c040-4bae-be59-bb72fef7dc04" />
-Actual vs Predicted Daily Price Change (Train vs Test) for technology sector
+                        Actual vs Predicted Daily Price Change (Train vs Test) for technology sector
 
 
 <img width="1480" height="742" alt="image" src="https://github.com/user-attachments/assets/a64e8cf2-dabf-4db4-91a9-3f0f20f2f51a" />
-Actual vs Predicted Real Estate Sector– Last 50 Train, first 50 Test Observations
+                        Actual vs Predicted Real Estate Sector– Last 50 Train, first 50 Test Observations
 
 
 <img width="1602" height="754" alt="image" src="https://github.com/user-attachments/assets/250e73be-6c80-4a00-9316-d4873f3da1ed" />
-Actual vs Predicted Percentage Price Change (Train vs Test) for Energy Sector
+                        Actual vs Predicted Percentage Price Change (Train vs Test) for Energy Sector
 
 🚀 Key Findings
 
